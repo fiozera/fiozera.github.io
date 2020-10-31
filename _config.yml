@@ -1,0 +1,49 @@
+site: Fiozera
+
+url: https://www.fiozera.com.br
+baseurl: 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  projects:
+    output: true
+    permalink: /project/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+grid_alignments:
+  - top
+  - center
+  - bottom
