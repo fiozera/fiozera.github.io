@@ -9,7 +9,7 @@ collections:
     permalink: /:name
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /:slug
 
 defaults:
   -
